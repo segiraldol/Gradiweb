@@ -1,0 +1,124 @@
+/* general */
+body 
+    width: 100%
+    height: auto
+    min-height: 100%
+    color: #000 !important
+    margin: 0
+    background-color: #f5f5f5 !important
+    font-family: 'Montserrat'
+    
+#app 
+  display: flex !important
+
+.contenedor 
+    position: relative
+    padding: 16px
+    max-width: 1024px
+    margin: auto
+
+.modal
+    position: absolute
+    transform-origin: 50%
+    top: 20%
+    left: 50%
+
+.oculto
+    display: none
+
+.breadcrumbs
+    color: #999
+    text-decoration: underline
+
+.fila 
+    display: flex
+    flex-wrap: wrap
+    align-content: center
+
+
+/* selectores */
+
+.selector 
+  position: relative
+  input 
+    position: relative
+    display: none
+    &:checked+label
+      background-color: black
+      color: white
+
+.etiqueta 
+    border-radius: 5px
+    font-size: 22px
+    margin: 5px
+    width: autopx
+    padding: 0 10px
+    transition: all .5s
+    background-color: #e8e8e8
+    cursor: pointer
+    user-select: none
+
+input[type="number"] 
+    height: 45px
+    font-size: 22px
+    width: 45px
+
+
+/* imágenes */
+
+.imagenes
+    display: block
+    width: 50%
+
+.featuredImg
+    width: 100%
+    margin-bottom: 10px
+
+.featuredImg img 
+    width: 100%
+
+.carruselImg
+    overflow-x: auto
+    display: inline-flex
+
+.carruselImg img 
+    width: 25%
+    margin: 0 5px
+
+
+/* textos */
+
+.detalles
+    width: 50%
+
+.autor
+    color: #666
+
+
+//.precio 
+
+
+h1, h2 
+  text-transform: uppercase
+
+//h3,h4,h5,h6,p,i,ol,ul,li
+
+.md-16px
+    margin-right: 16px
+
+button 
+    padding: 16px
+
+.descripcion 
+    color: black
+
+
+/* pantallas pequeñas */
+
+@media screen and (max-width: 767px) 
+    .fila
+        display: block !important
+    
+    .imagenes, .detalles 
+        width: 100%
+    
